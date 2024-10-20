@@ -1,0 +1,84 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: green;
+    background-color: yellow; /* Yellow background */
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: yellow; /* Base yellow background */
+  }
+  
+  .jokes {
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding around the jokes */
+    max-width: 600px; /* Max width for responsiveness */
+    margin: auto; /* Center the div */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-image: url('./assets/emoji.png'); /* Use the laughing emoji as background */
+    background-repeat: repeat; /* Repeat the background image */
+    background-size: 60px 60px; /* Size of the emoji */
+  }
+  
+  h1 {
+    font-size: 2.5em; /* Responsive font size */
+    line-height: 1.1;
+  }
+  
+  h2 {
+    font-size: 1.5em; /* Responsive font size */
+    margin: 10px 0; /* Margin for spacing */
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    color: white; /* Button text color */
+    cursor: pointer;
+    transition: border-color 0.25s, background-color 0.25s;
+  }
+  
+  button:hover {
+    border-color: #646cff;
+    background-color: #646cff; /* Change background color on hover */
+  }
+  
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2em; /* Adjust font size for smaller screens */
+    }
+  
+    h2 {
+      font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+  
+    .jokes {
+      padding: 15px; /* Reduce padding for smaller screens */
+      background-size: 40px 40px; /* Adjust emoji size for smaller screens */
+    }
+  }
+  
